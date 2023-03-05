@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sofa</title>
+</head>
+
+<body>
+    <button id="sList">&#8863;</button>
+    <button id="sGrid">&#8862;</button>
+
+    <!-- (C) ITEMS LIST/GRID -->
+    <div id="lgDemo">
+        <div class="item ">
+            <img src="/Images/Sofa/Sofa1/1.png" class="image-product"/>
+        </div>
+        <div class="item">
+            <img src="/Images/Sofa/Sofa1/1.png" class="image-product"/>
+        </div>
+        <div class="item">
+            <img src="/Images/Sofa/Sofa1/1.png" class="image-product"/>
+        </div>
+        <div class="item">
+            <img src="/Images/Sofa/Sofa1/1.png" class="image-product"/>
+        </div>
+        <div class="item">
+            <img src="/Images/Sofa/Sofa1/1.png" class="image-product"/>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("sList").onclick = () => {
+                document.getElementById("lgDemo").classList.remove("grid");
+            };
+            document.getElementById("sGrid").onclick = () => {
+                document.getElementById("lgDemo").classList.add("grid");
+            };
+        });
+    </script>
+
+</body>
+
+</html>

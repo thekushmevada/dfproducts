@@ -1,0 +1,27 @@
+/* (A) LIST VIEW BY DEFAULT */
+#lgDemo {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 5px;
+}
+#lgDemo .item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  height: 80%;
+  width: 80%;
+}
+#lgDemo .item:nth-child(odd) {
+  background: #f7f7f7;
+}
+
+/* (B) TRANSFORM INTO GRID VIEW */
+#lgDemo.grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+#lgDemo.grid .item:nth-child(odd) {
+  background: none;
+}
+.image-product {
+    height: 100%;
+    width: 100%;
+}
